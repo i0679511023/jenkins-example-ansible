@@ -20,3 +20,7 @@
         rule: allow
         port: 3306
         proto: tcp
+    - name: verify installation
+      ansible.builtin.command: mysql --version
+      register: mysql_version
+    - debug: var=mysql_version.stdout_lines
