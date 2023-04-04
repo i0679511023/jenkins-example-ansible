@@ -1,5 +1,6 @@
 - name: MariaDB installation
   hosts: mariadbs
+  ansible_user: stas
   become: yes
   tasks:
     - name: enable and start firewalld service
