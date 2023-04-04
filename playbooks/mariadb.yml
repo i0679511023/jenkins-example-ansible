@@ -1,7 +1,6 @@
 ---
 - name: Install MariaDB and open ports
   hosts: mariadbs
-  become: true
 
   tasks:
     - name: Install MariaDB
